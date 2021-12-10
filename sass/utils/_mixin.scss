@@ -1,0 +1,16 @@
+@mixin title-text {
+  font-weight: 700;
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  line-height: 1.17;
+  color: $color-heding;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@mixin transition {
+  transition-duration: $transition-d-time;
+  transition-timing-function: $transition-t-f-cubic;
+}
