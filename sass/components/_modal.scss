@@ -47,8 +47,12 @@
   transition-duration: $transition-d-time;
   transition-timing-function: $transition-t-f-cubic;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   padding: 40px;
   background-color: #fff;
   position: absolute;
@@ -62,7 +66,10 @@
 
 .modal__title {
   font-size: 20px;
-  line-height: 1.17;
+  line-height: 1.5;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.17;
+  }
   font-weight: 700;
   text-align: center;
   margin-bottom: 12px;
@@ -192,20 +199,33 @@ textarea:focus {
 .checkbox__text {
   display: inline;
   margin-right: 4px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   letter-spacing: 0.03em;
 }
 .checkbox__link {
   position: relative;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   letter-spacing: 0.03em;
   color: $color-hoverfocus;
   &::after {
     position: absolute;
-    bottom: 5px;
+
+    bottom: 2px;
+    @media screen and (min-width: 1200px) {
+      bottom: 5px;
+    }
     content: "";
     display: block;
     width: 100%;
