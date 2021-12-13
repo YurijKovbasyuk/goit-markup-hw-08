@@ -17,10 +17,17 @@
 .container--flex-header {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+  }
 }
 .container--flex-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }
+}
+.container--mobile {
+  margin-right: 0;
+  padding: 0;
 }
