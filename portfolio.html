@@ -1,473 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <!-- верхняя линия -->
-    <header class="header">
-      <div class="container container--flex-header">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo__header logo--black-text">Studio</span></a
-        >
-        <nav class="">
-          <ul class="navigation navigation--flex">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="./kontakt.html" class="navigation__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact contact--flex">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link"
-              ><svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- верхняя линия -->
+  <header class="header">
+    <div class="container container--flex-header">
+      <a class="logo" href="./index.html">Web<span class="logo__header logo--black-text">Studio</span></a>
+      <nav class="">
+        <ul class="navigation navigation--flex">
+          <li class="navigation__item">
+            <a href="./index.html" class="navigation__link">Студия</a>
           </li>
-          <li class="contact__item">
-            <a href="tel:+380991111111" class="contact__link"
-              ><svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 099 111 11 11
-            </a>
+          <li class="navigation__item">
+            <a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./kontakt.html" class="navigation__link">Контакты</a>
           </li>
         </ul>
-        <!-- кнопка открытия мобильного меню -->
-        <div class="container container--mobile">
-          <button class="menu-toggle js-open-menu">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
+      </nav>
+      <ul class="contact contact--flex">
+        <li class="contact__item">
+          <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16px"
+              height="12px">
+              <use href="./images/icons.svg#icon-mail"></use>
             </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- мобильное меню -->
-      <div class="menu-container js-menu-container">
-        <button class="menu-toggle js-close-menu">
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#icon-vector-close"></use>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="tel:+380991111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            +38 099 111 11 11
+          </a>
+        </li>
+      </ul>
+      <!-- кнопка открытия мобильного меню -->
+      <div class="container container--mobile">
+        <button class="menu-toggle js-open-menu">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <ul class="mobile-menu">
-          <li><a href="./index.html" class="mobile-menu__link">Студия</a></li>
-          <li>
-            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- мобильное меню -->
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#icon-vector-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu__link">Студия</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li>
+          <a href="./kontakt.html" class="mobile-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contact contact--mobile">
+        <li class="contact__item contact__item--mobile">
+          <a href="tel:+380991111111" class="contact__link">
+            +38 099 111 11 11
+          </a>
+        </li>
+        <li class="contact__item contact__item--mobile">
+          <a href="mailto:info@devstudio.com" class="contact__link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-mobile">
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Instagram</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Twitter</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Facebook</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Фильтры -->
+    <section class="section">
+      <div class="container">
+        <h1 class="visually-hidden">активные кнопки</h1>
+        <ul class="filters">
+          <li class="filters__item">
+            <button type="button" class="filters__button">Все</button>
           </li>
-          <li>
-            <a href="./kontakt.html" class="mobile-menu__link">Контакты</a>
+          <li class="filters__item">
+            <button type="button" class="filters__button">
+              <nobr>Веб-сайты</nobr>
+            </button>
+          </li>
+          <li class="filters__item">
+            <button type="button" class="filters__button">Приложения</button>
+          </li>
+          <li class="filters__item">
+            <button type="button" class="filters__button">Дизайн</button>
+          </li>
+          <li class="filters__item">
+            <button type="button" class="filters__button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="contact contact--mobile">
-          <li class="contact__item contact__item--mobile">
-            <a href="tel:+380991111111" class="contact__link">
-              +38 099 111 11 11
+
+        <!-- Проекты -->
+
+        <ul class="project project--margin">
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset=" ./images/tehno-354-1x.jpg 354w,
+                  ./images/tehno-370-1x.jpg 370w,
+                  ./images/tehno-450-1x.jpg 450w,
+                  ./images/tehno-354-2x.jpg 708w,
+                  ./images/tehno-370-2x.jpg 740w,
+                  ./images/tehno-450-2x.jpg 900w" sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
+                  src="./images/tehno-354-1x.jpg" alt="Технокряк" />
+                <p class="project__deskription">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для
+                  цифрового шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </div>
+
+              <div class="project__element">
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__text project__text--block">Веб-сайт</p>
+              </div>
             </a>
           </li>
-          <li class="contact__item contact__item--mobile">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              info@devstudio.com
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/orlean-354-1x.jpg 354w,
+                                                  ./images/orlean-370-1x.jpg 370w, 
+                                                  ./images/orlean-450-1x.jpg 450w, 
+                                                  ./images/orlean-354-2x.jpg 708w, 
+                                                  ./images/orlean-370-2x.jpg 740w, 
+                                                  ./images/orlean-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/orlean-354-1x.jpg"
+                  alt="Постер New Orlean vs Golden Star" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Постер
+                  <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="project__text">Дизайн</p>
+              </div>
             </a>
           </li>
-        </ul>
-        <ul class="social-mobile">
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Instagram</a>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/seafood-354-1x.jpg 354w,
+                                                  ./images/seafood-370-1x.jpg 370w, 
+                                                  ./images/seafood-450-1x.jpg 450w, 
+                                                  ./images/seafood-354-2x.jpg 708w, 
+                                                  ./images/seafood-370-2x.jpg 740w, 
+                                                  ./images/seafood-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/seafood-354-1x.jpg"
+                  alt="Ресторан Seafood" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Ресторан
+                  <span lang="en">Seafood</span>
+                </h2>
+                <p class="project__text">Приложение</p>
+              </div>
+            </a>
           </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Twitter</a>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/prime-354-1x.jpg 354w,
+                                                  ./images/prime-370-1x.jpg 370w, 
+                                                  ./images/prime-450-1x.jpg 450w, 
+                                                  ./images/prime-354-2x.jpg 708w, 
+                                                  ./images/prime-370-2x.jpg 740w, 
+                                                  ./images/prime-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/prime-354-1x.jpg"
+                  alt="Проект Prime" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Проект
+                  <span lang="en">Prime</span>
+                </h2>
+                <p class="project__text">Маркетинг</p>
+              </div>
+            </a>
           </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Facebook</a>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/boxes-354-1x.jpg 354w,
+                                                  ./images/boxes-370-1x.jpg 370w, 
+                                                  ./images/boxes-450-1x.jpg 450w, 
+                                                  ./images/boxes-354-2x.jpg 708w, 
+                                                  ./images/boxes-370-2x.jpg 740w, 
+                                                  ./images/boxes-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/boxes-354-1x.jpg"
+                  alt="Проект Boxes" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Проект
+                  <span lang="en">Boxes</span>
+                </h2>
+                <p class="project__text">Приложение</p>
+              </div>
+            </a>
           </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">LinkedIn</a>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/inspiration-354-1x.jpg 354w,
+                                                  ./images/inspiration-370-1x.jpg 370w, 
+                                                  ./images/inspiration-450-1x.jpg 450w, 
+                                                  ./images/inspiration-354-2x.jpg 708w, 
+                                                  ./images/inspiration-370-2x.jpg 740w, 
+                                                  ./images/inspiration-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
+                  src="./images/inspiration-354-1x.jpg" alt="Inspiration has no Borders" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  <span lang="en">Inspiration has no Borders</span>
+                </h2>
+                <p class="project__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/limited-354-1x.jpg 354w,
+                                                ./images/limited-370-1x.jpg 370w, 
+                                                ./images/limited-450-1x.jpg 450w, 
+                                                ./images/limited-354-2x.jpg 708w, 
+                                                ./images/limited-370-2x.jpg 740w, 
+                                                ./images/limited-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/limited-354-1x.jpg"
+                  alt="Издание Limited Edition" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Издание
+                  <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="project__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/lab-354-1x.jpg 354w,
+                                                  ./images/lab-370-1x.jpg 370w, 
+                                                  ./images/lab-450-1x.jpg 450w, 
+                                                  ./images/lab-354-2x.jpg 708w, 
+                                                  ./images/lab-370-2x.jpg 740w, 
+                                                  ./images/lab-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/lab-354-1x.jpg"
+                  alt="Проект LAB" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  Проект
+                  <span lang="en">LAB</span>
+                </h2>
+                <p class="project__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="0#" class="project__link">
+              <div class="project__inner">
+                <img class="project__img" srcset="./images/business-354-1x.jpg 354w,
+                                                  ./images/business-370-1x.jpg 370w, 
+                                                  ./images/business-450-1x.jpg 450w, 
+                                                  ./images/business-354-2x.jpg 708w, 
+                                                  ./images/business-370-2x.jpg 740w, 
+                                                  ./images/business-450-2x.jpg 900w"
+                  sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/business-354-1x.jpg"
+                  alt="Growing Business" />
+                <p class="project__deskription">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto et hic quidem explicabo delectus quam deserunt
+                  quas exercitationem repellat provident itaque, nobis
+                  veritatis. Maxime similique, quasi commodi consectetur
+                  repudiandae quis?
+                </p>
+              </div>
+              <div class="project__element">
+                <h2 class="project__title">
+                  <span lang="en">Growing Business</span>
+                </h2>
+                <p class="project__text">Приложение</p>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
-      <!-- Фильтры -->
-      <section class="section">
-        <div class="container">
-          <h1 class="visually-hidden">активные кнопки</h1>
-          <ul class="filters">
-            <li class="filters__item">
-              <button type="button" class="filters__button">Все</button>
-            </li>
-            <li class="filters__item">
-              <button type="button" class="filters__button">
-                <nobr>Веб-сайты</nobr>
-              </button>
-            </li>
-            <li class="filters__item">
-              <button type="button" class="filters__button">Приложения</button>
-            </li>
-            <li class="filters__item">
-              <button type="button" class="filters__button">Дизайн</button>
-            </li>
-            <li class="filters__item">
-              <button type="button" class="filters__button">Маркетинг</button>
-            </li>
-          </ul>
-
-          <!-- Проекты -->
-
-          <ul class="project project--margin">
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/technocryk.jpg"
-                    alt="Технокряк"
-                    class="project__img"
-                  />
-
-                  <p class="project__deskription">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-
-                <div class="project__element">
-                  <h2 class="project__title">Технокряк</h2>
-                  <p class="project__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/poster-new-orlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Постер
-                    <span lang="en">New Orlean vs Golden Star</span>
-                  </h2>
-                  <p class="project__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/restorant-seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Ресторан
-                    <span lang="en">Seafood</span>
-                  </h2>
-                  <p class="project__text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/project-prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Проект
-                    <span lang="en">Prime</span>
-                  </h2>
-                  <p class="project__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/project-boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Проект
-                    <span lang="en">Boxes</span>
-                  </h2>
-                  <p class="project__text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    <span lang="en">Inspiration has no Borders</span>
-                  </h2>
-                  <p class="project__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/limited-edition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Издание
-                    <span lang="en">Limited Edition</span>
-                  </h2>
-                  <p class="project__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/project-lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    Проект
-                    <span lang="en">LAB</span>
-                  </h2>
-                  <p class="project__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="project__item">
-              <a href="0#" class="project__link">
-                <div class="project__inner">
-                  <img
-                    src="./images/growing-business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project__deskription">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Architecto et hic quidem explicabo delectus quam deserunt
-                    quas exercitationem repellat provident itaque, nobis
-                    veritatis. Maxime similique, quasi commodi consectetur
-                    repudiandae quis?
-                  </p>
-                </div>
-                <div class="project__element">
-                  <h2 class="project__title">
-                    <span lang="en">Growing Business</span>
-                  </h2>
-                  <p class="project__text">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!-- Подвал -->
-    <footer class="footer">
-      <div class="container container--flex-footer">
-        <div class="footer__thumb-tablet">
-          <div class="footer__thumb-fone">
-            <a class="logo" href="./index.html"
-              >Web<span class="logo__footer logo__footer--white-text"
-                >Studio</span
-              ></a
-            >
-            <address class="address">
-              <ul class="">
-                <li class="address__item">
-                  <a
-                    href="https://goo.gl/maps/mw2z65s2qGVXYW2PA"
-                    class="address__link"
-                  >
-                    г. Киев, пр-т Леси Украинки, 26
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a href="mailto:info@example.com" class="address__contact"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a href="tel:+380991111111" class="address__contact"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="connection">
-            <h2 class="connection__title">присоединяйтесь</h2>
-            <ul class="social">
-              <li class="social__item">
-                <a href="" class="social__link social__link--bg-color">
-                  <svg class="social__svg social__svg--color-in-footer">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+    </section>
+  </main>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container container--flex-footer">
+      <div class="footer__thumb-tablet">
+        <div class="footer__thumb-fone">
+          <a class="logo" href="./index.html">Web<span class="logo__footer logo__footer--white-text">Studio</span></a>
+          <address class="address">
+            <ul class="">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/mw2z65s2qGVXYW2PA" class="address__link">
+                  г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--bg-color">
-                  <svg class="social__svg social__svg--color-in-footer">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__contact">info@example.com</a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--bg-color">
-                  <svg class="social__svg social__svg--color-in-footer">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--bg-color">
-                  <svg class="social__svg social__svg--color-in-footer">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__contact">+38 099 111 11 11</a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
-        <div class="mailing">
-          <h2 class="mailing__title">подпишитесь на рассылку</h2>
-          <form class="mailing__form">
-            <input
-              class="mailing__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="mailing__button">
-              Подписаться
-              <svg class="mailing__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+        <div class="connection">
+          <h2 class="connection__title">присоединяйтесь</h2>
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link social__link--bg-color">
+                <svg class="social__svg social__svg--color-in-footer">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--bg-color">
+                <svg class="social__svg social__svg--color-in-footer">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--bg-color">
+                <svg class="social__svg social__svg--color-in-footer">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--bg-color">
+                <svg class="social__svg social__svg--color-in-footer">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
+      <div class="mailing">
+        <h2 class="mailing__title">подпишитесь на рассылку</h2>
+        <form class="mailing__form">
+          <input class="mailing__input" type="email" name="email" placeholder="E-mail" />
+          <button type="submit" class="mailing__button">
+            Подписаться
+            <svg class="mailing__icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+</body>
+
 </html>
