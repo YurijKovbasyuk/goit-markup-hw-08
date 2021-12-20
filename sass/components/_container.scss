@@ -11,7 +11,7 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 .container--flex-header {
@@ -24,7 +24,7 @@
 .container--flex-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
 .container--mobile {
