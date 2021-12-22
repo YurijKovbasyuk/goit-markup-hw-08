@@ -62,6 +62,10 @@
     }
     color: $color-hoverfocus;
   }
+  &--current {
+    font-size: 34px;
+    color: $color-hoverfocus;
+  }
 }
 .contact__icon {
   fill: currentColor;

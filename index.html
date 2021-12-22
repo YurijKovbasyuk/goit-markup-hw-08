@@ -78,7 +78,7 @@
       </ul>
       <ul class="contact contact--mobile">
         <li class="contact__item contact__item--mobile">
-          <a href="tel:+380991111111" class="contact__link">
+          <a href="tel:+380991111111" class="contact__link contact__link--current">
             +38 099 111 11 11
           </a>
         </li>
@@ -179,6 +179,7 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="our-work">
           <li class="our-work__item">
+
             <img srcset="./images/box-1-370-1x.jpg 1x, ./images/box-1-370-2x.jpg 2x" src="./images/box-1-370-1x.jpg"
               alt="box1" width="370" />
             <div class="our-work__title">
@@ -209,12 +210,18 @@
         <ul class="our-command">
           <li class="our-comand__item">
             <picture>
+              <source srcset="./images/igor-270-1x.jpg 1x, ./images/igor-270-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/igor-354-1x.jpg 1x, ./images/igor-354-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/igor-450-1x.jpg 1x, ./images/igor-450-2x.jpg 2x" media="(min-width: 280px)">
+              <img src="./images/igor-354-1x.jpg" alt="Игорь Демьяненко">
+            </picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="./images/igor-270-1x.jpg 1x, ./images/igor-270-2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./images/igor-354-1x.jpg 1x, ./images/igor-354-2x.jpg 2x">
               <source media="(min-width: 355px)" srcset="./images/igor-450-1x.jpg 1x, ./images/igor-450-2x.jpg 2x">
               <source media="(min-width: 271px)" srcset="./images/igor-354-1x.jpg 1x, ./images/igor-354-2x.jpg 2x">
               <img src="./images/igor-270-1x.jpg" alt="Игорь Демьяненко" />
-            </picture>
+            </picture> -->
             <div class="our-comand__thumb">
               <h3 class="our-comand__title">Игорь Демьяненко</h3>
               <p class="our-comand__text" lang="en">Product Designer</p>
@@ -249,18 +256,18 @@
           </li>
           <li class="our-comand__item">
             <picture>
+              <source srcset="./images/olga-270-1x.jpg 1x, ./images/olga-270-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/olga-354-1x.jpg 1x, ./images/olga-354-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/olga-450-1x.jpg 1x, ./images/olga-450-2x.jpg 2x" media="(min-width: 280px)">
+              <img src="./images/olga-354-1x.jpg" alt="Ольга Репина">
+            </picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="./images/olga-270-1x.jpg 1x, ./images/olga-270-2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./images/olga-354-1x.jpg 1x, ./images/olga-354-2x.jpg 2x">
               <source media="(min-width: 355px)" srcset="./images/olga-450-1x.jpg 1x, ./images/olga-450-2x.jpg 2x">
               <source media="(min-width: 271px)" srcset="./images/olga-354-1x.jpg 1x, ./images/olga-354-2x.jpg 2x">
               <img src="./images/olga-270-1x.jpg" alt="Ольга Репина" />
-            </picture>
-            <!-- <img class="our-comand__picture" srcset="./images/olga-270-1x.jpg 1x,
-              ./images/olga-270-2x.jpg 2x,
-              ./images/olga-354-1x.jpg 1x,
-              ./images/olga-354-2x.jpg 2x,
-              ./images/olga-450-1x.jpg 1x,
-              ./images/olga-450-2x.jpg 2x" width="270px" src="./images/olga-270-1x.jpg" alt="Ольга Репина" /> -->
+            </picture> -->
 
             <div class="our-comand__thumb">
               <h3 class="our-comand__title">Ольга Репина</h3>
@@ -296,6 +303,15 @@
           </li>
           <li class="our-comand__item">
             <picture>
+              <source srcset="./images/nikolay-270-1x.jpg 1x, ./images/nikolay-270-2x.jpg 2x"
+                media="(min-width:1200px)">
+              <source srcset="./images/nikolay-354-1x.jpg 1x, ./images/nikolay-354-2x.jpg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./images/nikolay-450-1x.jpg 1x, ./images/nikolay-450-2x.jpg 2x"
+                media="(min-width: 280px)">
+              <img src="./images/nikolay-354-1x.jpg" alt="Николай Тарасов">
+            </picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/nikolay-270-1x.jpg 1x, ./images/nikolay-270-2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -305,7 +321,7 @@
               <source media="(min-width: 271px)"
                 srcset="./images/nikolay-354-1x.jpg 1x, ./images/nikolay-354-2x.jpg 2x">
               <img src="./images/nikolay-270-1x.jpg" alt="Николай Тарасов" />
-            </picture>
+            </picture> -->
 
             <div class="our-comand__thumb">
               <h3 class="our-comand__title">Николай Тарасов</h3>
@@ -341,12 +357,18 @@
           </li>
           <li class="our-comand__item">
             <picture>
+              <source srcset="./images/mihail-270-1x.jpg 1x, ./images/mihail-270-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/mihail-354-1x.jpg 1x, ./images/mihail-354-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/mihail-450-1x.jpg 1x, ./images/mihail-450-2x.jpg 2x" media="(min-width: 280px)">
+              <img src="./images/mihail-354-1x.jpg" alt="Михаил Ермаков">
+            </picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="./images/mihail-270-1x.jpg 1x, ./images/mihail-270-2x.jpg 2x">
               <source media="(min-width:768px)" srcset="./images/mihail-354-1x.jpg 1x, ./images/mihail-354-2x.jpg 2x">
               <source media="(min-width:355px)" srcset="./images/mihail-450-1x.jpg 1x, ./images/mihail-450-2x.jpg 2x">
               <source media="(min-width: 271px)" srcset="./images/mihail-354-1x.jpg 1x, ./images/mihail-354-2x.jpg 2x">
               <img src="./images/mihail-270-1x.jpg" alt="Михаил Ермаков" />
-            </picture>
+            </picture> -->
 
             <div class="our-comand__thumb">
               <h3 class="our-comand__title">Михаил Ермаков</h3>

@@ -405,6 +405,11 @@ img {
   }
 }
 
+.contact__link--current {
+  font-size: 34px;
+  color: #2196f3;
+}
+
 .contact__icon {
   fill: currentColor;
   margin-right: 8px;
