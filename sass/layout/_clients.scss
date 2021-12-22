@@ -1,84 +1,24 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-
-  @media screen and (min-width: 480px) and (max-width: 767.5px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 1200px) {
-  }
+  margin: -15px;
 }
 .container__title {
   @include title-text;
 }
 
 .clients__item {
-  height: 92px; 
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 250px;
+  height: 92px;
+  margin: 15px;
+  flex-basis: calc((100% - 4 * 15px) / 2);
 
-  @media screen and (max-width: 1199px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: 780px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
   }
-  @media screen and (min-width: 480px) and (max-width: 767.5px) {
-    flex-basis: calc((100% - 15px * 4) / 2);
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-    max-width: 210px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 15px * 6) / 3);
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
-    min-width: 210px;
-  }
+
   @media screen and (min-width: 1200px) {
-    & + .clients__item {
-      margin-left: 30px;
-      margin-bottom: 0;
-    }
-    max-width: 170px;
-    height: 92px;
-    margin-bottom: 0;
+    flex-basis: calc((100% - 12 * 15px) / 6);
   }
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: auto;
-  // margin-right: auto;
-  // max-width: 210px;
-  // height: 92px;
-  // flex-basis: 100%;
-  // @media screen and (min-width: 480px) and (max-width: 767px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   flex-basis: 210px;
-  // }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   flex-basis: calc((100% - 15px * 6) / 3);
-  //   width: 170px;
-  //   height: 92px;
-  //   &:nth-last-child(-n + 2) {
-  //     margin-bottom: 0;
-  //   }
-  //   & + .clients__item {
-  //     margin-left: 30px;
-  //   }
-  // }
-  // @media screen and (min-width: 768px) {
-  // }
 }
 
 .clients__link {

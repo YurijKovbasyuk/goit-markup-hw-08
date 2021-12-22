@@ -1,315 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
-  </head>
-  <body>
-    <!-- верхняя линия -->
-    <header class="header">
-      <div class="container container--flex-header">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo__header logo--black-text">Studio</span></a
-        >
-        <nav class="">
-          <ul class="navigation navigation--flex">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link "
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="./kontakt.html" class="navigation__link navigation__link--current">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact contact--flex">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link"
-              ><svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a href="tel:+380991111111" class="contact__link"
-              ><svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 099 111 11 11
-            </a>
-          </li>
-        </ul>
-        <!-- кнопка открытия мобильного меню -->
-        <div class="container container--mobile">
-          <button class="menu-toggle js-open-menu">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-    <!-- основная часть -->
-    <main>
-       <!-- мобильное меню -->
-      <div class="menu-container js-menu-container">
-        <button class="menu-toggle js-close-menu">
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#icon-vector-close"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu">
-          <li><a href="./index.html" class="mobile-menu__link">Студия</a></li>
-          <li>
-            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
-          </li>
-          <li>
-            <a href="./kontakt.html" class="mobile-menu__link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="contact contact--mobile">
-          <li class="contact__item contact__item--mobile">
-            <a href="tel:+380991111111" class="contact__link">
-              +38 099 111 11 11
-            </a>
-          </li>
-          <li class="contact__item contact__item--mobile">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-        <ul class="social-mobile">
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Instagram</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Twitter</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">Facebook</a>
-          </li>
-          <li class="social-mobile__item">
-            <a href=".#" class="social-mobile__link">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
-      <div class="containr">
-        <div class="box"></div>
-      </div>
-      <section class="section container">
-        <div>
-          <button>
-            <svg>
-              <use href="./images/icon.svg#client1"></use>
-            </svg>
-          </button>
-        </div>
-        <ul class="social-links">
-          <li class="icon-styles">
-            <button class="icon">
-              <svg class="icon-instagram">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="icon-styles">
-            <button class="icon">
-              <svg class="icon-twitter">
-                <use href="./images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="icon-styles">
-            <button class="icon">
-              <svg class="icon-facebook">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="icon-styles">
-            <button class="icon">
-              <svg class="icon-linkedin">
-                <use href="./images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
 
-        <img src="./images/map.jpg" alt="карта" width="70%" />
-      </section>
-    </main>
-    <!-- Подвал -->
-    <footer class="footer">
-      <div class="container container--flex">
-        <div>
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__footer logo__footer--white-text"
-              >Studio</span
-            ></a
-          >
-          <address class="address">
-            <ul class="">
-              <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/mw2z65s2qGVXYW2PA"
-                  class="address__link"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
-                </a>
-              </li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__contakt"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__contakt"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="connection">
-          <h2 class="connection__title">присоединяйтесь</h2>
-          <ul class="webby">
-            <li class="webby__item">
-              <a href="" class="webby__link webby__link--bg-color">
-                <svg class="webby__svg webby__svg--color-in-footer">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webby__item">
-              <a href="" class="webby__link webby__link--bg-color">
-                <svg class="webby__svg webby__svg--color-in-footer">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webby__item">
-              <a href="" class="webby__link webby__link--bg-color">
-                <svg class="webby__svg webby__svg--color-in-footer">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="webby__item">
-              <a href="" class="webby__link webby__link--bg-color">
-                <svg class="webby__svg webby__svg--color-in-footer">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="mailing">
-          <h2 class="mailing__title">подпишитесь на рассылку</h2>
-          <form class="mailing__form">
-            <input
-              class="mailing__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="mailing__button">
-              Подписаться
-              <svg class="mailing__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
-    <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-button-close" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#icon-vector-close"></use>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <!-- верхняя линия -->
+  <header class="header">
+    <div class="container container--flex-header">
+      <a class="logo" href="./index.html">Web<span class="logo__header logo--black-text">Studio</span></a>
+      <nav class="">
+        <ul class="navigation navigation--flex">
+          <li class="navigation__item">
+            <a href="./index.html" class="navigation__link">Студия</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./portfolio.html" class="navigation__link ">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./kontakt.html" class="navigation__link navigation__link--current">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact contact--flex">
+        <li class="contact__item">
+          <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16px"
+              height="12px">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="tel:+380991111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            +38 099 111 11 11
+          </a>
+        </li>
+      </ul>
+      <!-- кнопка открытия мобильного меню -->
+      <button class="menu-toggle js-open-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!-- основная часть -->
+  <main>
+    <!-- мобильное меню -->
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#icon-vector-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu__link">Студия</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li>
+          <a href="./kontakt.html" class="mobile-menu__link mobile-menu__link--current">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contact contact--mobile">
+        <li class="contact__item contact__item--mobile">
+          <a href="tel:+380991111111" class="contact__link">
+            +38 099 111 11 11
+          </a>
+        </li>
+        <li class="contact__item contact__item--mobile">
+          <a href="mailto:info@devstudio.com" class="contact__link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-mobile">
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Instagram</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Twitter</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">Facebook</a>
+        </li>
+        <li class="social-mobile__item">
+          <a href=".#" class="social-mobile__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <div class="containr">
+      <div class="box"></div>
+    </div>
+    <section class="section container">
+      <div>
+        <button>
+          <svg>
+            <use href="./images/icon.svg#client1"></use>
           </svg>
         </button>
-        <h4 class="modal-title">Оставьте свои данные, мы вам перезвоним</h4>
-        <form class="modal-form" autocomplete="off">
-          <div class="form-field"> 
-            <label class="form-label" for="name">Имя 
-            </label>
-            <input class="modal-input" type="text" id="name" name="user-name" />
-            <svg class="modal-icon">
-                <use href=./images/icons.svg#icon-person></use>
+      </div>
+      <ul class="social-links">
+        <li class="icon-styles">
+          <button class="icon">
+            <svg class="icon-instagram">
+              <use href="./images/sprite.svg#icon-instagram"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="tel">Телефон 
-              
-              </label>
-            <input class="modal-input" type="tel" id="tel" />
-          <svg class="modal-icon">
-                <use href=./images/icons.svg#icon-phone></use>
+          </button>
+        </li>
+        <li class="icon-styles">
+          <button class="icon">
+            <svg class="icon-twitter">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="icon-styles">
+          <button class="icon">
+            <svg class="icon-facebook">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="icon-styles">
+          <button class="icon">
+            <svg class="icon-linkedin">
+              <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <img src="./images/map.jpg" alt="карта" width="70%" />
+    </section>
+  </main>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container container--flex">
+      <div>
+        <a class="logo" href="./index.html">Web<span class="logo__footer logo__footer--white-text">Studio</span></a>
+        <address class="address">
+          <ul class="">
+            <li class="address__item">
+              <a href="https://goo.gl/maps/mw2z65s2qGVXYW2PA" class="address__link">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="address__item">
+              <a href="mailto:info@example.com" class="address__contakt">info@example.com</a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380991111111" class="address__contakt">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="connection">
+        <h2 class="connection__title">присоединяйтесь</h2>
+        <ul class="webby">
+          <li class="webby__item">
+            <a href="" class="webby__link webby__link--bg-color">
+              <svg class="webby__svg webby__svg--color-in-footer">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="email">Почта 
-            </label>
-            <input class="modal-input" type="email" name="Почта" id="email" />
-            <svg class="modal-icon">
-              <use href=./images/icons.svg#icon-email></use>
+            </a>
+          </li>
+          <li class="webby__item">
+            <a href="" class="webby__link webby__link--bg-color">
+              <svg class="webby__svg webby__svg--color-in-footer">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="webby__item">
+            <a href="" class="webby__link webby__link--bg-color">
+              <svg class="webby__svg webby__svg--color-in-footer">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="webby__item">
+            <a href="" class="webby__link webby__link--bg-color">
+              <svg class="webby__svg webby__svg--color-in-footer">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mailing">
+        <h2 class="mailing__title">подпишитесь на рассылку</h2>
+        <form class="mailing__form">
+          <input class="mailing__input" type="email" name="email" placeholder="E-mail" />
+          <button type="submit" class="mailing__button">
+            Подписаться
+            <svg class="mailing__icon">
+              <use href="./images/icons.svg#icon-send"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="comments" > Коментарий </label
-            ><textarea  
-              name="Коментарий"
-              id="comments"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
-          <div class="form-checkbox">
-            <label class="form-label">
-              <input type="checkbox" class="checkbox"/>
-              <svg class="modal-icon">
-                <use href=./images/icons.svg#icon-policy></use>
-              </svg>Соглашаюсь с рассылкой и принимаю
-            </label><a href=""> Условия договора</a>
-          </div>
-          <button class="modal-button-form" type="submit">Отправить</button>
+          </button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
-  </body>
+  </footer>
+  <!-- модальное окно -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-button-close" data-modal-close>
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#icon-vector-close"></use>
+        </svg>
+      </button>
+      <h4 class="modal-title">Оставьте свои данные, мы вам перезвоним</h4>
+      <form class="modal-form" autocomplete="off">
+        <div class="form-field">
+          <label class="form-label" for="name">Имя
+          </label>
+          <input class="modal-input" type="text" id="name" name="user-name" />
+          <svg class="modal-icon">
+            <use href=./images/icons.svg#icon-person></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="tel">Телефон
+
+          </label>
+          <input class="modal-input" type="tel" id="tel" />
+          <svg class="modal-icon">
+            <use href=./images/icons.svg#icon-phone></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="email">Почта
+          </label>
+          <input class="modal-input" type="email" name="Почта" id="email" />
+          <svg class="modal-icon">
+            <use href=./images/icons.svg#icon-email></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="comments"> Коментарий </label><textarea name="Коментарий" id="comments"
+            placeholder="Введите текст"></textarea>
+        </div>
+        <div class="form-checkbox">
+          <label class="form-label">
+            <input type="checkbox" class="checkbox" />
+            <svg class="modal-icon">
+              <use href=./images/icons.svg#icon-policy></use>
+            </svg>Соглашаюсь с рассылкой и принимаю
+          </label><a href=""> Условия договора</a>
+        </div>
+        <button class="modal-button-form" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>

@@ -4,19 +4,22 @@
   padding-bottom: 60px;
 
   &__thumb-fone {
-    margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0px;
-    }
     @media screen and (max-width: 767.5px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 1199.5px) {
       text-align: center;
     }
   }
   &__thumb-tablet {
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;
       justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -55,9 +58,9 @@
 }
 
 .connection {
-  @media screen and (max-width: 767.5px) {
-    margin-bottom: 60px;
-  }
+  // @media screen and (max-width: 767.5px) {
+  //   margin-bottom: 60px;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     align-items: baseline;
     text-align: center;
@@ -78,12 +81,12 @@
 }
 
 .mailing {
-  // flex-grow: 1;
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    flex-grow: 1;
   }
 }
 .mailing__title {

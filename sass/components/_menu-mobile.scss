@@ -72,6 +72,9 @@
   &:focus {
     color: $color-hoverfocus;
   }
+  &--current {
+    color: $color-hoverfocus;
+  }
 }
 
 .social-mobile {
@@ -90,7 +93,7 @@
   }
 }
 .social-mobile__item:not(:last-child) .social-mobile__link::after {
-  content: "";
+  content: '';
 
   display: block;
   width: 1px;

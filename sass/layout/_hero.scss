@@ -1,40 +1,32 @@
 .hero {
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
-  // height: 600px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // max-width: 1600px;
   text-align: center;
-  background-size: 480px 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 480px;
   margin: 0 auto;
 
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../images/header_480x400_1x.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header_480x400_1x.jpg) no-repeat center / cover;
   @media (min-resolution: 2dppx) {
-    background-image: url(../images/header_480x400_2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header_480x400_2x.jpg) no-repeat center / cover;
   }
   @media screen and (min-width: 768px) {
-    background-size: 768px 400px;
-    max-width: 768px;
-    background-image: url(../images/header_768x400_1x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header_768x400_1x.jpg) no-repeat center / cover;
     @media screen and (min-resolution: 2dppx) {
-      background-image: url(../images/header_768x400_2x.jpg);
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header_768x400_2x.jpg) no-repeat center / cover;
     }
   }
   @media screen and (min-width: 1200px) {
-    background-size: 1600px 600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    background-image: url(../images/header_1600x600_1x.jpg);
+
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header_1600x600_1x.jpg) no-repeat center / cover;
     @media screen and (min-resolution: 2dppx) {
-      background-image: url(../images/header_1600x600_2x.jpg);
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header_1600x600_2x.jpg) no-repeat center / cover;
     }
   }
 }
